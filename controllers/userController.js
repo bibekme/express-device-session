@@ -65,7 +65,7 @@ export const loginUser = asyncHandler(async (req, res) => {
     });
     res.status(200).json({
       token: deviceToken.key,
-      device_id: deviceToken.deviceId,
+      deviceId: deviceToken.deviceId,
     });
   } else {
     res.status(401);
